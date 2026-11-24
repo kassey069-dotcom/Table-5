@@ -287,6 +287,7 @@ body:has(.page:target) #home:not(:target) {
     gap: 28px;
     max-width: 1250px;
     margin: auto;
+    align-items: stretch;
 }
 
 .menu-card {
@@ -296,6 +297,7 @@ body:has(.page:target) #home:not(:target) {
     transition: .35s;
     overflow: hidden;
     border-radius: 4px;
+    min-width: 0;
 }
 
 .menu-card:hover {
@@ -304,7 +306,7 @@ body:has(.page:target) #home:not(:target) {
     border-color: var(--gold);
 }
 
-/* BIGGER FOOD PICTURES */
+/* FOOD PICTURES */
 
 .menu-card img {
     width: 100%;
@@ -655,26 +657,42 @@ body:has(.page:target) #home:not(:target) {
         font-size: 13px;
     }
 
-    .menu-grid,
+    /* TWO-COLUMN MENU ON MOBILE */
+
+    .menu-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .menu-card img {
+        height: 160px;
+    }
+
+    .card-info {
+        padding: 13px;
+    }
+
+    .card-info h3 {
+        font-size: 16px;
+    }
+
+    .card-info p {
+        font-size: 11px;
+        min-height: auto;
+    }
+
+    .card-info span {
+        font-size: 14px;
+    }
+
     .package-grid,
     .promo-grid,
     .contact-box {
         grid-template-columns: 1fr;
     }
 
-    .menu-card img {
-        height: 260px;
-    }
-
-    .card-info h3 {
-        font-size: 20px;
-    }
-
-    .card-info p {
-        font-size: 13px;
-    }
-
     .about-box {
         padding: 27px;
     }
-}
+    }
+    
