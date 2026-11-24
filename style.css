@@ -279,32 +279,37 @@ body:has(.page:target) #home:not(:target) {
     line-height: 1.9;
 }
 
-/* MENU CARDS */
+/* TABLET */
 
-.menu-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 28px;
-    max-width: 1250px;
-    margin: auto;
-    align-items: stretch;
+@media (max-width: 1000px) {
+    .menu-grid {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        gap: 20px;
+    }
+
+    .menu-card {
+        flex: 0 0 calc((100% - 20px) / 2);
+        width: calc((100% - 20px) / 2);
+    }
 }
 
-.menu-card {
-    background: var(--soft-black);
-    border: 1px solid rgba(212,175,98,.5);
-    box-shadow: 0 8px 25px rgba(0,0,0,.3);
-    transition: .35s;
-    overflow: hidden;
-    border-radius: 4px;
-    min-width: 0;
-}
+/* MOBILE */
 
-.menu-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 30px rgba(212,175,98,.15);
-    border-color: var(--gold);
-}
+@media (max-width: 650px) {
+    .menu-grid {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        gap: 12px;
+    }
+
+    .menu-card {
+        flex: 0 0 calc((100% - 12px) / 2);
+        width: calc((100% - 12px) / 2);
+    }
+        }
 
 /* FOOD PICTURES */
 
