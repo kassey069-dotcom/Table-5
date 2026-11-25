@@ -741,3 +741,13 @@ body:has(.page:target) #home:not(:target) {
     }
     }
     
+/* ABOUT US - JUSTIFIED TEXT ALIGNMENT */
+
+.about-box p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.about-box .signature {
+    text-align: center;
+    }
