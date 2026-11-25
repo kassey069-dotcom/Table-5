@@ -25,7 +25,9 @@ body {
     font-family: 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
 }
 
-/* TOP HEADER */
+/* =====================================
+   TOP HEADER
+   ===================================== */
 
 .top-header {
     position: fixed;
@@ -99,7 +101,9 @@ body {
     background: rgba(212,175,98,.12);
 }
 
-/* SIDE NAVIGATION */
+/* =====================================
+   SIDE NAVIGATION
+   ===================================== */
 
 .sidebar {
     position: fixed;
@@ -157,7 +161,9 @@ body {
     letter-spacing: 3px;
 }
 
-/* MAIN CONTENT */
+/* =====================================
+   MAIN CONTENT
+   ===================================== */
 
 .main-content {
     margin-left: 225px;
@@ -202,7 +208,9 @@ body:has(.page:target) #home:not(:target) {
     }
 }
 
-/* HOME */
+/* =====================================
+   HOME
+   ===================================== */
 
 .hero-content {
     max-width: 680px;
@@ -234,7 +242,9 @@ body:has(.page:target) #home:not(:target) {
     margin-bottom: 38px;
 }
 
-/* ELEGANT BUTTON */
+/* =====================================
+   ELEGANT BUTTON
+   ===================================== */
 
 .gold-button {
     display: inline-block;
@@ -257,7 +267,9 @@ body:has(.page:target) #home:not(:target) {
     box-shadow: 0 8px 20px rgba(212,175,98,.2);
 }
 
-/* SECTION HEADINGS */
+/* =====================================
+   SECTION HEADINGS
+   ===================================== */
 
 .section-heading {
     text-align: center;
@@ -279,17 +291,21 @@ body:has(.page:target) #home:not(:target) {
     line-height: 1.9;
 }
 
-/* MENU CARDS - EVEN HORIZONTAL ALIGNMENT */
+/* =====================================
+   MENU CARDS - CLEAN GRID ALIGNMENT
+   ===================================== */
 
 .menu-grid {
-    display: grid !important;
-    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-    grid-auto-rows: 1fr;
-    align-items: stretch;
-    gap: 28px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-flow: row;
+    gap: 25px;
     width: 100%;
     max-width: 1250px;
-    margin: auto;
+    margin: 35px auto;
+    padding: 0;
+    justify-items: stretch;
+    align-items: stretch;
 }
 
 .menu-card {
@@ -298,6 +314,7 @@ body:has(.page:target) #home:not(:target) {
     width: 100%;
     min-width: 0;
     height: 100%;
+    margin: 0;
     background: var(--soft-black);
     border: 1px solid rgba(212,175,98,.5);
     box-shadow: 0 8px 25px rgba(0,0,0,.3);
@@ -315,11 +332,11 @@ body:has(.page:target) #home:not(:target) {
 /* FOOD PICTURES */
 
 .menu-card img {
+    display: block;
     width: 100%;
     height: 250px;
     min-height: 250px;
     object-fit: cover;
-    display: block;
     transition: .4s;
 }
 
@@ -361,51 +378,9 @@ body:has(.page:target) #home:not(:target) {
     letter-spacing: 1px;
 }
 
-/* TABLET */
-
-@media (max-width: 1000px) {
-    .menu-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-        gap: 15px;
-    }
-
-    .menu-card img {
-        height: 200px;
-        min-height: 200px;
-    }
-}
-
-/* MOBILE */
-
-@media (max-width: 650px) {
-    .menu-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-        gap: 12px;
-    }
-
-    .menu-card img {
-        height: 160px;
-        min-height: 160px;
-    }
-
-    .card-info {
-        padding: 13px;
-    }
-
-    .card-info h3 {
-        font-size: 16px;
-    }
-
-    .card-info p {
-        font-size: 11px;
-    }
-
-    .card-info span {
-        font-size: 14px;
-    }
-}
-
-/* PACKAGES */
+/* =====================================
+   PACKAGES
+   ===================================== */
 
 .package-grid {
     display: grid;
@@ -459,7 +434,9 @@ body:has(.page:target) #home:not(:target) {
     font-size: 28px;
 }
 
-/* PROMOTIONS */
+/* =====================================
+   PROMOTIONS
+   ===================================== */
 
 .promo-grid {
     display: grid;
@@ -509,7 +486,9 @@ body:has(.page:target) #home:not(:target) {
     font-size: 12px;
 }
 
-/* ABOUT */
+/* =====================================
+   ABOUT
+   ===================================== */
 
 .about-box {
     max-width: 850px;
@@ -542,7 +521,9 @@ body:has(.page:target) #home:not(:target) {
     margin-top: 28px;
 }
 
-/* CONTACT */
+/* =====================================
+   CONTACT
+   ===================================== */
 
 .contact-box {
     display: grid;
@@ -578,7 +559,9 @@ body:has(.page:target) #home:not(:target) {
     line-height: 1.9;
 }
 
-/* FOOTER */
+/* =====================================
+   FOOTER
+   ===================================== */
 
 .footer {
     background: #100508;
@@ -608,9 +591,12 @@ body:has(.page:target) #home:not(:target) {
     font-size: 11px;
 }
 
-/* TABLET */
+/* =====================================
+   TABLET RESPONSIVE DESIGN
+   ===================================== */
 
 @media (max-width: 1000px) {
+
     .top-header {
         padding-left: 245px;
     }
@@ -624,22 +610,27 @@ body:has(.page:target) #home:not(:target) {
         font-size: 9px;
     }
 
-    .menu-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-    }
-
     .promo-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
+    .menu-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+
     .menu-card img {
-        height: 240px;
+        height: 200px;
+        min-height: 200px;
     }
 }
 
-/* MOBILE */
+/* =====================================
+   MOBILE RESPONSIVE DESIGN
+   ===================================== */
 
 @media (max-width: 650px) {
+
     .top-header {
         position: relative;
         height: auto;
@@ -711,15 +702,16 @@ body:has(.page:target) #home:not(:target) {
         font-size: 13px;
     }
 
-    /* THREE-COLUMN MENU ON MOBILE */
+    /* TWO-COLUMN MENU ON MOBILE */
 
     .menu-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-        gap: 8px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
     }
 
     .menu-card img {
         height: 160px;
+        min-height: 160px;
     }
 
     .card-info {
@@ -732,7 +724,6 @@ body:has(.page:target) #home:not(:target) {
 
     .card-info p {
         font-size: 11px;
-        min-height: auto;
     }
 
     .card-info span {
@@ -748,96 +739,5 @@ body:has(.page:target) #home:not(:target) {
     .about-box {
         padding: 27px;
     }
-}
-
-
-/* =====================================
-   FINAL MENU CARD ALIGNMENT FIX
-   ===================================== */
-
-.menu-grid {
-    display: grid !important;
-    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-    gap: 25px !important;
-    width: 100% !important;
-    max-width: 1200px !important;
-    margin: 35px auto !important;
-    padding: 0 15px !important;
-    justify-items: stretch !important;
-    align-items: stretch !important;
-    grid-auto-flow: row !important;
-}
-
-/* RESET INDIVIDUAL CARD POSITIONS */
-.menu-grid .menu-card {
-    width: 100% !important;
-    max-width: none !important;
-    min-width: 0 !important;
-    margin: 0 !important;
-    transform: none !important;
-    position: relative !important;
-    left: auto !important;
-    right: auto !important;
-    grid-column: auto !important;
-    justify-self: stretch !important;
-    align-self: stretch !important;
-    display: flex !important;
-    flex-direction: column !important;
-    height: 100% !important;
-}
-
-/* RESET ALTERNATING CARD POSITIONS */
-.menu-grid .menu-card:nth-child(n) {
-    grid-column: auto !important;
-    margin: 0 !important;
-    transform: none !important;
-    justify-self: stretch !important;
-}
-
-/* FOOD IMAGES */
-.menu-grid .menu-card img {
-    width: 100% !important;
-    height: 220px !important;
-    object-fit: cover !important;
-    display: block !important;
-}
-
-/* CARD INFORMATION */
-.menu-grid .card-info {
-    flex: 1 !important;
-    display: flex !important;
-    flex-direction: column !important;
-}
-
-.menu-grid .card-info p {
-    flex-grow: 1 !important;
-}
-
-/* TABLET */
-@media screen and (max-width: 1000px) {
-    .menu-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-        gap: 20px !important;
     }
-
-    .menu-grid .menu-card img {
-        height: 190px !important;
-    }
-}
-
-/* MOBILE */
-@media screen and (max-width: 600px) {
-    .menu-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-        gap: 15px !important;
-        padding: 0 10px !important;
-    }
-
-    .menu-grid .menu-card img {
-        height: 150px !important;
-    }
-        }
-        
-
-        
     
