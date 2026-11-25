@@ -749,3 +749,185 @@ body:has(.page:target) #home:not(:target) {
         padding: 27px;
     }
 }
+
+
+/* =================================
+   MOBILE RESPONSIVE LAYOUT FIX
+================================= */
+
+@media screen and (max-width: 768px) {
+
+    /* HEADER */
+    .top-header {
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        padding: 15px 12px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .brand {
+        text-align: center;
+    }
+
+    .top-nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 18px;
+    }
+
+    /* HIDE SIDEBAR ON MOBILE */
+    .sidebar {
+        display: none;
+    }
+
+    /* MAIN CONTENT */
+    .main-content {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 25px 15px;
+        box-sizing: border-box;
+    }
+
+    /* SECTIONS */
+    .page {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* SECTION HEADINGS */
+    .section-heading {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto 30px;
+        padding: 0 5px;
+        box-sizing: border-box;
+    }
+
+    .section-heading h2 {
+        font-size: 32px;
+    }
+
+    /* MENU GRID */
+    .menu-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        width: 100%;
+        max-width: 100%;
+        margin: 25px auto;
+        padding: 0;
+        gap: 15px;
+        box-sizing: border-box;
+    }
+
+    /* MENU CARDS */
+    .menu-card {
+        width: 100%;
+        min-width: 0;
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    .menu-card img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .card-info {
+        width: 100%;
+        flex: 1;
+        padding: 12px;
+        box-sizing: border-box;
+    }
+
+    .card-info h3 {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+
+    .card-info p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .card-info span {
+        font-size: 14px;
+    }
+
+    /* PACKAGES */
+    .package-grid {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    /* PROMOTIONS */
+    .promo-grid {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    /* ABOUT AND CONTACT */
+    .about-box,
+    .contact-box {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* FOOTER */
+    .footer {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+}
+
+/* SMALL PHONES */
+@media screen and (max-width: 480px) {
+
+    .main-content {
+        padding: 20px 12px;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .menu-card img {
+        height: 210px;
+    }
+
+    .card-info {
+        padding: 18px;
+    }
+
+    .card-info h3 {
+        font-size: 21px;
+    }
+
+    .card-info p {
+        font-size: 15px;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .top-nav {
+        gap: 10px 15px;
+    }
+    }
+        
