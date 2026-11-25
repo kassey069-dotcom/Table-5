@@ -751,183 +751,93 @@ body:has(.page:target) #home:not(:target) {
 }
 
 
-/* =================================
-   MOBILE RESPONSIVE LAYOUT FIX
-================================= */
+/* =====================================
+   FINAL MENU CARD ALIGNMENT FIX
+   ===================================== */
 
-@media screen and (max-width: 768px) {
+.menu-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 25px !important;
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 35px auto !important;
+    padding: 0 15px !important;
+    justify-items: stretch !important;
+    align-items: stretch !important;
+    grid-auto-flow: row !important;
+}
 
-    /* HEADER */
-    .top-header {
-        width: 100%;
-        height: auto;
-        min-height: 0;
-        padding: 15px 12px;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
+/* RESET INDIVIDUAL CARD POSITIONS */
+.menu-grid .menu-card {
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    transform: none !important;
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    grid-column: auto !important;
+    justify-self: stretch !important;
+    align-self: stretch !important;
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+}
 
-    .brand {
-        text-align: center;
-    }
+/* RESET ALTERNATING CARD POSITIONS */
+.menu-grid .menu-card:nth-child(n) {
+    grid-column: auto !important;
+    margin: 0 !important;
+    transform: none !important;
+    justify-self: stretch !important;
+}
 
-    .top-nav {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px 18px;
-    }
+/* FOOD IMAGES */
+.menu-grid .menu-card img {
+    width: 100% !important;
+    height: 220px !important;
+    object-fit: cover !important;
+    display: block !important;
+}
 
-    /* HIDE SIDEBAR ON MOBILE */
-    .sidebar {
-        display: none;
-    }
+/* CARD INFORMATION */
+.menu-grid .card-info {
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
 
-    /* MAIN CONTENT */
-    .main-content {
-        width: 100%;
-        max-width: 100%;
-        margin: 0;
-        padding: 25px 15px;
-        box-sizing: border-box;
-    }
+.menu-grid .card-info p {
+    flex-grow: 1 !important;
+}
 
-    /* SECTIONS */
-    .page {
-        width: 100%;
-        max-width: 100%;
-        box-sizing: border-box;
-    }
-
-    /* SECTION HEADINGS */
-    .section-heading {
-        width: 100%;
-        text-align: center;
-        margin: 0 auto 30px;
-        padding: 0 5px;
-        box-sizing: border-box;
-    }
-
-    .section-heading h2 {
-        font-size: 32px;
-    }
-
-    /* MENU GRID */
+/* TABLET */
+@media screen and (max-width: 1000px) {
     .menu-grid {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        width: 100%;
-        max-width: 100%;
-        margin: 25px auto;
-        padding: 0;
-        gap: 15px;
-        box-sizing: border-box;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 20px !important;
     }
 
-    /* MENU CARDS */
-    .menu-card {
-        width: 100%;
-        min-width: 0;
-        height: 100%;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        box-sizing: border-box;
-    }
-
-    .menu-card img {
-        width: 100%;
-        height: 150px;
-        object-fit: cover;
-        display: block;
-    }
-
-    .card-info {
-        width: 100%;
-        flex: 1;
-        padding: 12px;
-        box-sizing: border-box;
-    }
-
-    .card-info h3 {
-        font-size: 18px;
-        line-height: 1.3;
-    }
-
-    .card-info p {
-        font-size: 13px;
-        line-height: 1.5;
-    }
-
-    .card-info span {
-        font-size: 14px;
-    }
-
-    /* PACKAGES */
-    .package-grid {
-        grid-template-columns: 1fr;
-        width: 100%;
-    }
-
-    /* PROMOTIONS */
-    .promo-grid {
-        grid-template-columns: 1fr;
-        width: 100%;
-    }
-
-    /* ABOUT AND CONTACT */
-    .about-box,
-    .contact-box {
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    /* FOOTER */
-    .footer {
-        width: 100%;
-        box-sizing: border-box;
-        text-align: center;
+    .menu-grid .menu-card img {
+        height: 190px !important;
     }
 }
 
-/* SMALL PHONES */
-@media screen and (max-width: 480px) {
-
-    .main-content {
-        padding: 20px 12px;
-    }
-
+/* MOBILE */
+@media screen and (max-width: 600px) {
     .menu-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 15px !important;
+        padding: 0 10px !important;
     }
 
-    .menu-card img {
-        height: 210px;
+    .menu-grid .menu-card img {
+        height: 150px !important;
     }
-
-    .card-info {
-        padding: 18px;
-    }
-
-    .card-info h3 {
-        font-size: 21px;
-    }
-
-    .card-info p {
-        font-size: 15px;
-    }
-
-    .section-heading h2 {
-        font-size: 28px;
-    }
-
-    .top-nav {
-        gap: 10px 15px;
-    }
-    }
+        }
         
+
+        
+    
