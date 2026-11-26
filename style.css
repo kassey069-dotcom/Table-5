@@ -12,17 +12,17 @@
     --muted: #655957;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+{
+    Margin: 0;
+    Padding: 0;
+    Box-sizing: border-box;
+    Scroll-behavior: smooth;
 }
 
-body {
-    background: var(--black);
-    color: var(--cream);
-    font-family: 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
+Body {
+    Background: var(--black);
+    Color: var(--cream);
+    Font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Georgia, serif;
 }
 
 /* =====================================
@@ -30,11 +30,11 @@ body {
    ===================================== */
 
 .top-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 110px;
+    Position: fixed;
+    Top: 0;
+    Left: 0;
+    Width: 100%;
+    Height: 110px;
     z-index: 100;
     background: linear-gradient(110deg, #180408, #500d20);
     border-bottom: 2px solid var(--gold);
@@ -46,59 +46,59 @@ body {
 }
 
 .brand {
-    color: var(--cream);
-    text-align: center;
-    min-width: 145px;
+    Color: var(--cream);
+    Text-align: center;
+    Min-width: 145px;
 }
 
 .brand-small {
-    color: var(--gold);
-    font-size: 9px;
-    letter-spacing: 4px;
-    font-weight: bold;
+    Color: var(--gold);
+    Font-size: 9px;
+    Letter-spacing: 4px;
+    Font-weight: bold;
 }
 
 .brand h1 {
-    font-family: 'Brush Script MT', 'Segoe Script', cursive;
-    font-size: 43px;
-    font-weight: normal;
-    line-height: 1.1;
-    color: var(--light-gold);
+    Font-family: ‘Brush Script MT’, ‘Segoe Script’, cursive;
+    Font-size: 43px;
+    Font-weight: normal;
+    Line-height: 1.1;
+    Color: var(--light-gold);
 }
 
 .brand h1 span {
-    color: var(--gold);
+    Color: var(--gold);
 }
 
 .brand p {
-    font-family: Georgia, serif;
-    font-size: 10px;
-    letter-spacing: 2px;
-    color: var(--cream);
+    Font-family: Georgia, serif;
+    Font-size: 10px;
+    Letter-spacing: 2px;
+    Color: var(--cream);
 }
 
 .top-nav {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-    justify-content: flex-end;
+    Display: flex;
+    Gap: 8px;
+    Flex-wrap: wrap;
+    Justify-content: flex-end;
 }
 
 .top-nav a {
-    color: var(--cream);
-    text-decoration: none;
-    font-size: 11px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    padding: 13px 15px;
-    border: 1px solid transparent;
-    transition: .3s;
+    Color: var(--cream);
+    Text-decoration: none;
+    Font-size: 11px;
+    Font-weight: bold;
+    Letter-spacing: 1px;
+    Padding: 13px 15px;
+    Border: 1px solid transparent;
+    Transition: .3s;
 }
 
 .top-nav a:hover {
-    color: var(--light-gold);
-    border: 1px solid var(--gold);
-    background: rgba(212,175,98,.12);
+    Color: var(--light-gold);
+    Border: 1px solid var(--gold);
+    Background: rgba(212,175,98,.12);
 }
 
 /* =====================================
@@ -106,59 +106,59 @@ body {
    ===================================== */
 
 .sidebar {
-    position: fixed;
-    top: 110px;
-    left: 0;
-    width: 225px;
-    height: calc(100vh - 110px);
-    background: linear-gradient(180deg, #500d20, #180408);
-    padding: 28px 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
+    Position: fixed;
+    Top: 110px;
+    Left: 0;
+    Width: 225px;
+    Height: calc(100vh – 110px);
+    Background: linear-gradient(180deg, #500d20, #180408);
+    Padding: 28px 20px;
+    Display: flex;
+    Flex-direction: column;
+    Gap: 7px;
     z-index: 90;
     border-right: 2px solid var(--gold);
     box-shadow: 5px 0 20px rgba(0,0,0,.25);
 }
 
 .side-title {
-    color: var(--gold);
-    font-size: 10px;
-    font-weight: bold;
-    letter-spacing: 3px;
-    margin: 13px 0 8px;
+    Color: var(--gold);
+    Font-size: 10px;
+    Font-weight: bold;
+    Letter-spacing: 3px;
+    Margin: 13px 0 8px;
 }
 
 .sidebar a {
-    text-decoration: none;
-    color: var(--cream);
-    font-family: 'Palatino Linotype', Georgia, serif;
-    font-size: 13px;
-    font-weight: bold;
-    letter-spacing: .7px;
-    padding: 13px;
-    border: 1px solid transparent;
-    border-radius: 3px;
-    transition: .3s;
+    Text-decoration: none;
+    Color: var(--cream);
+    Font-family: ‘Palatino Linotype’, Georgia, serif;
+    Font-size: 13px;
+    Font-weight: bold;
+    Letter-spacing: .7px;
+    Padding: 13px;
+    Border: 1px solid transparent;
+    Border-radius: 3px;
+    Transition: .3s;
 }
 
 .sidebar a:hover {
-    color: var(--light-gold);
-    background: rgba(212,175,98,.13);
-    border-color: var(--gold);
-    padding-left: 21px;
+    Color: var(--light-gold);
+    Background: rgba(212,175,98,.13);
+    Border-color: var(--gold);
+    Padding-left: 21px;
 }
 
 .sidebar-bottom {
-    margin-top: auto;
-    padding-top: 20px;
-    border-top: 1px solid var(--gold);
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-    color: var(--gold);
-    font-size: 10px;
-    letter-spacing: 3px;
+    Margin-top: auto;
+    Padding-top: 20px;
+    Border-top: 1px solid var(--gold);
+    Display: flex;
+    Flex-direction: column;
+    Gap: 7px;
+    Color: var(--gold);
+    Font-size: 10px;
+    Letter-spacing: 3px;
 }
 
 /* =====================================
@@ -166,45 +166,45 @@ body {
    ===================================== */
 
 .main-content {
-    margin-left: 225px;
-    padding-top: 110px;
-    min-height: 100vh;
+    Margin-left: 225px;
+    Padding-top: 110px;
+    Min-height: 100vh;
 }
 
 .page {
-    display: none;
-    min-height: calc(100vh - 110px);
-    padding: 70px 6%;
-    animation: appear .5s ease;
+    Display: none;
+    Min-height: calc(100vh – 110px);
+    Padding: 70px 6%;
+    Animation: appear .5s ease;
 }
 
 .page:target {
-    display: block;
+    Display: block;
 }
 
 #home {
-    display: flex;
-    align-items: center;
-    background:
-        linear-gradient(90deg, rgba(16,5,8,.94), rgba(80,13,32,.76)),
-        url("images/restaurant-background.jpg") center/cover no-repeat;
+    Display: flex;
+    Align-items: center;
+    Background:
+        Linear-gradient(90deg, rgba(16,5,8,.94), rgba(80,13,32,.76)),
+        url(“images/restaurant-background.jpg”) center/cover no-repeat;
     color: var(--white);
     padding: 70px 9%;
 }
 
-body:has(.page:target) #home:not(:target) {
-    display: none;
+Body:has(.page:target) #home:not(:target) {
+    Display: none;
 }
 
 @keyframes appear {
-    from {
-        opacity: 0;
-        transform: translateY(15px);
+    From {
+        Opacity: 0;
+        Transform: translateY(15px);
     }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
+    To {
+        Opacity: 1;
+        Transform: translateY(0);
     }
 }
 
@@ -213,33 +213,33 @@ body:has(.page:target) #home:not(:target) {
    ===================================== */
 
 .hero-content {
-    max-width: 680px;
+    Max-width: 680px;
 }
 
 .eyebrow {
-    color: var(--gold);
-    font-size: 11px;
-    letter-spacing: 4px;
-    margin-bottom: 20px;
-    font-weight: bold;
+    Color: var(--gold);
+    Font-size: 11px;
+    Letter-spacing: 4px;
+    Margin-bottom: 20px;
+    Font-weight: bold;
 }
 
 .hero h2 {
-    font-family: 'Brush Script MT', 'Segoe Script', cursive;
-    font-size: clamp(60px, 7vw, 100px);
-    line-height: 1.05;
-    font-weight: normal;
-    color: var(--light-gold);
-    margin-bottom: 25px;
-    text-shadow: 2px 3px 8px rgba(0,0,0,.6);
+    Font-family: ‘Brush Script MT’, ‘Segoe Script’, cursive;
+    Font-size: clamp(60px, 7vw, 100px);
+    Line-height: 1.05;
+    Font-weight: normal;
+    Color: var(--light-gold);
+    Margin-bottom: 25px;
+    Text-shadow: 2px 3px 8px rgba(0,0,0,.6);
 }
 
 .hero-description {
-    max-width: 500px;
-    color: var(--cream);
-    line-height: 2;
-    font-size: 15px;
-    margin-bottom: 38px;
+    Max-width: 500px;
+    Color: var(--cream);
+    Line-height: 2;
+    Font-size: 15px;
+    Margin-bottom: 38px;
 }
 
 /* =====================================
@@ -247,24 +247,24 @@ body:has(.page:target) #home:not(:target) {
    ===================================== */
 
 .gold-button {
-    display: inline-block;
-    padding: 16px 30px;
-    background: linear-gradient(135deg, #f0dca9, #b88b3f);
-    color: var(--deep-burgundy);
-    border: 1px solid var(--light-gold);
-    text-decoration: none;
-    font-size: 11px;
-    letter-spacing: 2px;
-    font-weight: bold;
-    transition: .3s;
-    box-shadow: 0 6px 20px rgba(0,0,0,.3);
+    Display: inline-block;
+    Padding: 16px 30px;
+    Background: linear-gradient(135deg, #f0dca9, #b88b3f);
+    Color: var(--deep-burgundy);
+    Border: 1px solid var(--light-gold);
+    Text-decoration: none;
+    Font-size: 11px;
+    Letter-spacing: 2px;
+    Font-weight: bold;
+    Transition: .3s;
+    Box-shadow: 0 6px 20px rgba(0,0,0,.3);
 }
 
 .gold-button:hover {
-    background: transparent;
-    color: var(--light-gold);
-    transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(212,175,98,.2);
+    Background: transparent;
+    Color: var(--light-gold);
+    Transform: translateY(-4px);
+    Box-shadow: 0 8px 20px rgba(212,175,98,.2);
 }
 
 /* =====================================
@@ -272,107 +272,107 @@ body:has(.page:target) #home:not(:target) {
    ===================================== */
 
 .section-heading {
-    text-align: center;
-    margin: 10px auto 50px;
+    Text-align: center;
+    Margin: 10px auto 50px;
 }
 
 .section-heading h2 {
-    color: var(--light-gold);
-    font-family: 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
-    font-size: clamp(30px, 4vw, 46px);
-    font-weight: bold;
-    margin-bottom: 15px;
-    text-shadow: 1px 2px 5px rgba(0,0,0,.5);
+    Color: var(--light-gold);
+    Font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Georgia, serif;
+    Font-size: clamp(30px, 4vw, 46px);
+    Font-weight: bold;
+    Margin-bottom: 15px;
+    Text-shadow: 1px 2px 5px rgba(0,0,0,.5);
 }
 
 .section-heading > p:last-child {
-    color: #e3d6c9;
-    font-size: 14px;
-    line-height: 1.9;
+    Color: #e3d6c9;
+    Font-size: 14px;
+    Line-height: 1.9;
 }
 
 /* =====================================
-   MENU CARDS - HORIZONTAL GRID
+   MENU CARDS – HORIZONTAL GRID
    ===================================== */
 
 .menu-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    grid-auto-flow: row;
-    grid-auto-columns: auto;
-    gap: 25px;
-    width: 100%;
-    max-width: 1250px;
-    margin: 35px auto;
-    padding: 0;
-    justify-items: stretch;
-    align-items: stretch;
+    Display: grid;
+    Grid-template-columns: repeat(3, minmax(0, 1fr));
+    Grid-auto-flow: row;
+    Grid-auto-columns: auto;
+    Gap: 25px;
+    Width: 100%;
+    Max-width: 1250px;
+    Margin: 35px auto;
+    Padding: 0;
+    Justify-items: stretch;
+    Align-items: stretch;
 }
 
 .menu-card {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    min-width: 0;
-    height: 100%;
-    margin: 0;
-    background: var(--soft-black);
-    border: 1px solid rgba(212,175,98,.5);
-    box-shadow: 0 8px 25px rgba(0,0,0,.3);
-    transition: .35s;
-    overflow: hidden;
-    border-radius: 4px;
+    Display: flex;
+    Flex-direction: column;
+    Width: 100%;
+    Min-width: 0;
+    Height: 100%;
+    Margin: 0;
+    Background: var(--soft-black);
+    Border: 1px solid rgba(212,175,98,.5);
+    Box-shadow: 0 8px 25px rgba(0,0,0,.3);
+    Transition: .35s;
+    Overflow: hidden;
+    Border-radius: 4px;
 }
 
 .menu-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 30px rgba(212,175,98,.15);
-    border-color: var(--gold);
+    Transform: translateY(-8px);
+    Box-shadow: 0 15px 30px rgba(212,175,98,.15);
+    Border-color: var(--gold);
 }
 
 .menu-card img {
-    display: block;
-    width: 100%;
-    height: 250px;
-    min-height: 250px;
-    object-fit: cover;
-    transition: .4s;
+    Display: block;
+    Width: 100%;
+    Height: 250px;
+    Min-height: 250px;
+    Object-fit: cover;
+    Transition: .4s;
 }
 
 .menu-card:hover img {
-    transform: scale(1.04);
+    Transform: scale(1.04);
 }
 
 .card-info {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    padding: 23px;
-    background: linear-gradient(180deg, #21191a, #140f10);
+    Flex: 1;
+    Display: flex;
+    Flex-direction: column;
+    Padding: 23px;
+    Background: linear-gradient(180deg, #21191a, #140f10);
 }
 
 .card-info h3 {
-    font-family: 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
-    font-size: 19px;
-    font-weight: bold;
-    color: var(--light-gold);
-    margin-bottom: 12px;
+    Font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Georgia, serif;
+    Font-size: 19px;
+    Font-weight: bold;
+    Color: var(--light-gold);
+    Margin-bottom: 12px;
 }
 
 .card-info p {
-    font-size: 13px;
-    line-height: 1.9;
-    color: #e9ded4;
-    flex: 1;
+    Font-size: 13px;
+    Line-height: 1.9;
+    Color: #e9ded4;
+    Flex: 1;
 }
 
 .card-info span {
-    display: inline-block;
-    margin-top: 17px;
-    color: var(--gold);
-    font-size: 17px;
-    font-weight: bold;
-    letter-spacing: 1px;
+    Display: inline-block;
+    Margin-top: 17px;
+    Color: var(--gold);
+    Font-size: 17px;
+    Font-weight: bold;
+    Letter-spacing: 1px;
 }
 
 /* =====================================
@@ -380,55 +380,55 @@ body:has(.page:target) #home:not(:target) {
    ===================================== */
 
 .package-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 27px;
-    max-width: 950px;
-    margin: auto;
+    Display: grid;
+    Grid-template-columns: repeat(2, minmax(0, 1fr));
+    Gap: 27px;
+    Max-width: 950px;
+    Margin: auto;
 }
 
 .package-card {
-    background: linear-gradient(145deg, #65152b, #1c080e);
-    color: var(--cream);
-    padding: 40px;
-    text-align: center;
-    border: 1px solid var(--gold);
-    box-shadow: 0 8px 25px rgba(0,0,0,.3);
-    transition: .3s;
+    Background: linear-gradient(145deg, #65152b, #1c080e);
+    Color: var(--cream);
+    Padding: 40px;
+    Text-align: center;
+    Border: 1px solid var(--gold);
+    Box-shadow: 0 8px 25px rgba(0,0,0,.3);
+    Transition: .3s;
 }
 
 .package-card:hover {
-    transform: translateY(-7px);
-    border-color: var(--light-gold);
-    box-shadow: 0 12px 25px rgba(212,175,98,.15);
+    Transform: translateY(-7px);
+    Border-color: var(--light-gold);
+    Box-shadow: 0 12px 25px rgba(212,175,98,.15);
 }
 
 .package-number {
-    display: block;
-    color: var(--gold);
-    font-size: 13px;
-    letter-spacing: 4px;
-    margin-bottom: 22px;
+    Display: block;
+    Color: var(--gold);
+    Font-size: 13px;
+    Letter-spacing: 4px;
+    Margin-bottom: 22px;
 }
 
 .package-card h3 {
-    font-family: 'Palatino Linotype', Georgia, serif;
-    font-size: 21px;
-    color: var(--light-gold);
-    margin-bottom: 17px;
+    Font-family: ‘Palatino Linotype’, Georgia, serif;
+    Font-size: 21px;
+    Color: var(--light-gold);
+    Margin-bottom: 17px;
 }
 
 .package-card p {
-    color: #f0e3d6;
-    font-size: 13px;
-    line-height: 1.9;
-    margin-bottom: 22px;
+    Color: #f0e3d6;
+    Font-size: 13px;
+    Line-height: 1.9;
+    Margin-bottom: 22px;
 }
 
 .package-card strong {
-    display: inline-block;
-    color: var(--gold);
-    font-size: 28px;
+    Display: inline-block;
+    Color: var(--gold);
+    Font-size: 28px;
 }
 
 /* =====================================
@@ -436,95 +436,95 @@ body:has(.page:target) #home:not(:target) {
    ===================================== */
 
 .promo-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 24px;
-    max-width: 1150px;
-    margin: auto;
+    Display: grid;
+    Grid-template-columns: repeat(3, minmax(0, 1fr));
+    Gap: 24px;
+    Max-width: 1150px;
+    Margin: auto;
 }
 
 .promo-card {
-    background: linear-gradient(145deg, #25191b, #130d0e);
-    padding: 30px;
-    border: 1px solid rgba(212,175,98,.5);
-    border-top: 4px solid var(--gold);
-    transition: .3s;
+    Background: linear-gradient(145deg, #25191b, #130d0e);
+    Padding: 30px;
+    Border: 1px solid rgba(212,175,98,.5);
+    Border-top: 4px solid var(--gold);
+    Transition: .3s;
 }
 
 .promo-card:hover {
-    transform: translateY(-6px);
-    border-color: var(--light-gold);
-    box-shadow: 0 10px 25px rgba(212,175,98,.12);
+    Transform: translateY(-6px);
+    Border-color: var(--light-gold);
+    Box-shadow: 0 10px 25px rgba(212,175,98,.12);
 }
 
 .promo-card span {
-    color: var(--gold);
-    font-size: 13px;
-    letter-spacing: 3px;
+    Color: var(--gold);
+    Font-size: 13px;
+    Letter-spacing: 3px;
 }
 
 .promo-card h3 {
-    color: var(--light-gold);
-    font-family: 'Palatino Linotype', Georgia, serif;
-    font-size: 18px;
-    margin: 20px 0 14px;
+    Color: var(--light-gold);
+    Font-family: ‘Palatino Linotype’, Georgia, serif;
+    Font-size: 18px;
+    Margin: 20px 0 14px;
 }
 
 .promo-card p {
-    color: #e9ded4;
-    font-size: 13px;
-    line-height: 1.9;
+    Color: #e9ded4;
+    Font-size: 13px;
+    Line-height: 1.9;
 }
 
 .small-note {
-    text-align: center;
-    margin-top: 30px;
-    color: #d8c7b8;
-    font-size: 12px;
+    Text-align: center;
+    Margin-top: 30px;
+    Color: #d8c7b8;
+    Font-size: 12px;
 }
 
 /* =====================================
-   ABOUT US - MESSAGE ALIGNMENT
+   ABOUT US – MESSAGE ALIGNMENT
    ===================================== */
 
 .about-box {
-    width: 100%;
-    max-width: 850px;
-    margin: 0 auto;
-    padding: 50px;
-    background: linear-gradient(145deg, #25191b, #130d0e);
-    border: 1px solid var(--gold);
-    border-top: 4px solid var(--gold);
-    line-height: 2;
-    text-align: center;
-    box-shadow: 0 10px 25px rgba(0,0,0,.3);
+    Width: 100%;
+    Max-width: 850px;
+    Margin: 0 auto;
+    Padding: 50px;
+    Background: linear-gradient(145deg, #25191b, #130d0e);
+    Border: 1px solid var(--gold);
+    Border-top: 4px solid var(--gold);
+    Line-height: 2;
+    Text-align: center;
+    Box-shadow: 0 10px 25px rgba(0,0,0,.3);
 }
 
 .about-box h3 {
-    color: var(--light-gold);
-    font-family: 'Palatino Linotype', Georgia, serif;
-    font-size: 25px;
-    margin-bottom: 22px;
-    text-align: center;
+    Color: var(--light-gold);
+    Font-family: ‘Palatino Linotype’, Georgia, serif;
+    Font-size: 25px;
+    Margin-bottom: 22px;
+    Text-align: center;
 }
 
 .about-box p {
-    color: #e9ded4;
-    font-size: 14px;
-    line-height: 2;
-    margin-bottom: 20px;
-    text-align: justify;
-    text-justify: inter-word;
+    Color: #e9ded4;
+    Font-size: 14px;
+    Line-height: 2;
+    Margin-bottom: 20px;
+    Text-align: justify;
+    Text-justify: inter-word;
 }
 
 .about-box .signature {
-    color: var(--gold);
-    font-family: 'Brush Script MT', 'Segoe Script', cursive;
-    font-size: 34px;
-    line-height: 1.5;
-    margin-top: 28px;
-    margin-bottom: 0;
-    text-align: center;
+    Color: var(--gold);
+    Font-family: ‘Brush Script MT’, ‘Segoe Script’, cursive;
+    Font-size: 34px;
+    Line-height: 1.5;
+    Margin-top: 28px;
+    Margin-bottom: 0;
+    Text-align: center;
 }
 
 /* =====================================
@@ -532,37 +532,37 @@ body:has(.page:target) #home:not(:target) {
    ===================================== */
 
 .contact-box {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 22px;
-    max-width: 900px;
-    margin: auto;
+    Display: grid;
+    Grid-template-columns: repeat(2, minmax(0, 1fr));
+    Gap: 22px;
+    Max-width: 900px;
+    Margin: auto;
 }
 
 .contact-box div {
-    background: linear-gradient(145deg, #25191b, #130d0e);
-    border: 1px solid rgba(212,175,98,.5);
-    padding: 32px;
-    border-left: 4px solid var(--gold);
-    transition: .3s;
+    Background: linear-gradient(145deg, #25191b, #130d0e);
+    Border: 1px solid rgba(212,175,98,.5);
+    Padding: 32px;
+    Border-left: 4px solid var(--gold);
+    Transition: .3s;
 }
 
 .contact-box div:hover {
-    border-color: var(--light-gold);
-    transform: translateY(-4px);
+    Border-color: var(--light-gold);
+    Transform: translateY(-4px);
 }
 
 .contact-box h3 {
-    color: var(--light-gold);
-    font-family: 'Palatino Linotype', Georgia, serif;
-    font-size: 18px;
-    margin-bottom: 14px;
+    Color: var(--light-gold);
+    Font-family: ‘Palatino Linotype’, Georgia, serif;
+    Font-size: 18px;
+    Margin-bottom: 14px;
 }
 
 .contact-box p {
-    color: #e9ded4;
-    font-size: 13px;
-    line-height: 1.9;
+    Color: #e9ded4;
+    Font-size: 13px;
+    Line-height: 1.9;
 }
 
 /* =====================================
@@ -570,31 +570,31 @@ body:has(.page:target) #home:not(:target) {
    ===================================== */
 
 .footer {
-    background: #100508;
-    color: var(--cream);
-    padding: 45px 20px;
-    text-align: center;
-    border-top: 2px solid var(--gold);
+    Background: #100508;
+    Color: var(--cream);
+    Padding: 45px 20px;
+    Text-align: center;
+    Border-top: 2px solid var(--gold);
 }
 
 .footer h2 {
-    color: var(--light-gold);
-    font-family: 'Brush Script MT', 'Segoe Script', cursive;
-    font-size: 43px;
-    font-weight: normal;
+    Color: var(--light-gold);
+    Font-family: ‘Brush Script MT’, ‘Segoe Script’, cursive;
+    Font-size: 43px;
+    Font-weight: normal;
 }
 
 .footer p {
-    font-size: 12px;
-    line-height: 2;
-    color: #e9ded4;
+    Font-size: 12px;
+    Line-height: 2;
+    Color: #e9ded4;
 }
 
 .footer small {
-    display: block;
-    margin-top: 22px;
-    color: var(--gold);
-    font-size: 11px;
+    Display: block;
+    Margin-top: 22px;
+    Color: var(--gold);
+    Font-size: 11px;
 }
 
 /* =====================================
@@ -604,31 +604,31 @@ body:has(.page:target) #home:not(:target) {
 @media (max-width: 1000px) {
 
     .top-header {
-        padding-left: 245px;
+        Padding-left: 245px;
     }
 
     .top-nav {
-        gap: 2px;
+        Gap: 2px;
     }
 
     .top-nav a {
-        padding: 10px 8px;
-        font-size: 9px;
+        Padding: 10px 8px;
+        Font-size: 9px;
     }
 
     .promo-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        Grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .menu-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        grid-auto-flow: row;
-        gap: 18px;
+        Grid-template-columns: repeat(2, minmax(0, 1fr));
+        Grid-auto-flow: row;
+        Gap: 18px;
     }
 
     .menu-card img {
-        height: 200px;
-        min-height: 200px;
+        Height: 200px;
+        Min-height: 200px;
     }
 }
 
@@ -639,131 +639,132 @@ body:has(.page:target) #home:not(:target) {
 @media (max-width: 650px) {
 
     .top-header {
-        position: relative;
-        height: auto;
-        min-height: 110px;
-        padding: 18px 12px;
-        flex-direction: column;
-        gap: 15px;
+        Position: relative;
+        Height: auto;
+        Min-height: 110px;
+        Padding: 18px 12px;
+        Flex-direction: column;
+        Gap: 15px;
     }
 
     .brand h1 {
-        font-size: 38px;
+        Font-size: 38px;
     }
 
     .top-nav {
-        justify-content: center;
-        gap: 5px;
+        Justify-content: center;
+        Gap: 5px;
     }
 
     .top-nav a {
-        font-size: 9px;
-        padding: 9px 10px;
+        Font-size: 9px;
+        Padding: 9px 10px;
     }
 
     .sidebar {
-        position: relative;
-        top: auto;
-        width: 100%;
-        height: auto;
-        padding: 13px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 5px;
-        border-right: none;
-        border-bottom: 2px solid var(--gold);
+        Position: relative;
+        Top: auto;
+        Width: 100%;
+        Height: auto;
+        Padding: 13px;
+        Display: flex;
+        Flex-direction: row;
+        Flex-wrap: wrap;
+        Justify-content: center;
+        Gap: 5px;
+        Border-right: none;
+        Border-bottom: 2px solid var(--gold);
     }
 
     .sidebar .side-title,
     .sidebar-bottom {
-        display: none;
+        Display: none;
     }
 
     .sidebar a {
-        font-size: 10px;
-        padding: 10px;
+        Font-size: 10px;
+        Padding: 10px;
     }
 
     .main-content {
-        margin-left: 0;
-        padding-top: 0;
+        Margin-left: 0;
+        Padding-top: 0;
     }
 
     .page {
-        padding: 45px 18px;
-        min-height: 70vh;
+        Padding: 45px 18px;
+        Min-height: 70vh;
     }
 
     #home {
-        min-height: 70vh;
-        padding: 45px 25px;
+        Min-height: 70vh;
+        Padding: 45px 25px;
     }
 
     .hero h2 {
-        font-size: 60px;
+        Font-size: 60px;
     }
 
     .hero-description {
-        font-size: 13px;
+        Font-size: 13px;
     }
 
     /* TWO MENU COLUMNS ON MOBILE */
 
     .menu-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        grid-auto-flow: row;
-        gap: 12px;
+        Grid-template-columns: repeat(2, minmax(0, 1fr));
+        Grid-auto-flow: row;
+        Gap: 12px;
     }
 
     .menu-card {
-        width: 100%;
-        min-width: 0;
+        Width: 100%;
+        Min-width: 0;
     }
 
     .menu-card img {
-        height: 160px;
-        min-height: 160px;
+        Height: 160px;
+        Min-height: 160px;
     }
 
     .card-info {
-        padding: 13px;
+        Padding: 13px;
     }
 
     .card-info h3 {
-        font-size: 16px;
+        Font-size: 16px;
     }
 
     .card-info p {
-        font-size: 11px;
+        Font-size: 11px;
     }
 
     .card-info span {
-        font-size: 14px;
+        Font-size: 14px;
     }
 
     .package-grid,
     .promo-grid,
     .contact-box {
-        grid-template-columns: 1fr;
+        Grid-template-columns: 1fr;
     }
 
     .about-box {
-        padding: 27px;
+        Padding: 27px;
     }
 
     .about-box h3 {
-        font-size: 22px;
+        Font-size: 22px;
     }
 
     .about-box p {
-        font-size: 13px;
-        line-height: 1.9;
+        Font-size: 13px;
+        Line-height: 1.9;
     }
 
     .about-box .signature {
-        font-size: 27px;
+        Font-size: 27px;
     }
     }
     
+
